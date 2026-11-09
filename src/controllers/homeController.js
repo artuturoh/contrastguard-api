@@ -1,4 +1,4 @@
-import { renderStudioHtml } from '../services/studioHtml.js';
+import { renderLandingHtml } from '../views/landingHtml.js';
 
 /**
  * Controller for GET /health.
@@ -20,7 +20,7 @@ export function homePage(req, res) {
   // If request specifically prefers text/html
   if (req.accepts('html')) {
     res.setHeader('Content-Type', 'text/html; charset=utf-8');
-    return res.status(200).send(renderStudioHtml());
+    return res.status(200).send(renderLandingHtml());
   }
 
   // Otherwise return JSON API metadata
@@ -31,7 +31,7 @@ export function homePage(req, res) {
     status: 'online',
     description: 'Ultra-fast (<2ms), 100% in-memory color contrast auditing, auto-fixing, APCA perceptual scoring, and design system scale generator.',
     rapidapi: {
-      playground: 'https://rapidapi.com/artuturoh/api/contrastguard-wcag-color-contrast-and-accessibility-fixer/playground',
+      playground: 'https://rapidapi.com/artuturoh/api/contrastguard-wcag-color-contrast-and-accessibility-fixer',
       docs: '/docs'
     },
     endpoints: {

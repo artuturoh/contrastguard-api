@@ -29,7 +29,7 @@ describe('ContrastGuard API Test Suite', () => {
       assert.match(res.headers['content-type'], /text\/html/);
       assert.ok(res.text.includes('#090D16'), 'Contains dark theme background #090D16');
       assert.ok(res.text.includes('ContrastGuard'), 'Contains brand name');
-      assert.ok(res.text.includes('https://rapidapi.com/artuturoh/api/contrastguard-wcag-color-contrast-and-accessibility-fixer/playground'), 'Contains RapidAPI playground link');
+      assert.ok(res.text.includes('https://rapidapi.com/artuturoh/api/contrastguard-wcag-color-contrast-and-accessibility-fixer'), 'Contains RapidAPI playground link');
       assert.equal(res.text.includes('github.com'), false, 'Does not include any GitHub links');
     });
 
