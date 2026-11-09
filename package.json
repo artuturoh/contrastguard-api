@@ -1,0 +1,37 @@
+{
+  "name": "contrastguard-api",
+  "version": "1.0.0",
+  "description": "ContrastGuard API — WCAG 2.1 & APCA Color Contrast Analyzer, Auto-Fixer & Accessible Palette Generator",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "wcag",
+    "wcag21",
+    "apca",
+    "color-contrast",
+    "accessibility",
+    "a11y",
+    "color-blindness",
+    "palette-generator",
+    "auto-fix"
+  ],
+  "author": "artuturoh",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0"
+  },
+  "devDependencies": {
+    "supertest": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
